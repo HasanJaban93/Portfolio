@@ -16,6 +16,7 @@
 	margin: 0 auto;
 	display: none;
 }
+
 #city-image {
 	width: 80%;
 	height: auto;
@@ -37,6 +38,7 @@
 	text-wrap: nowrap;
 	text-decoration: none;
 }
+
 #imageDate a:link,
 #imageDate a:visited {
 	color: #000080;
@@ -67,6 +69,7 @@
 	justify-content: space-between;
 	display: none;
 }
+
 .col {
 	margin: 1rem 0;
 	display: flex;
