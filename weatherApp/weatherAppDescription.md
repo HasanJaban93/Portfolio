@@ -32,8 +32,8 @@ To use the Weather App, you'll need to obtain API keys for the Unsplash API and 
 ### Adding API Keys
 Once you have obtained your API keys, you need to add them to the project. Here's how:
 
-1. **Unsplash API**: Sign up for an account on [Unsplash](https://unsplash.com/developers) and generate an access key. Replace the placeholder text `"your access key for Unsplash API"` in the `js/showCityImage.js` file with your actual access key.
-
+1. **Unsplash API**: Replace the placeholder text `"your access key for Unsplash API"` in the `js/showCityImage.js` file with your actual access key.
+   
     ```javascript
     // In js/showCityImage.js
 
@@ -41,7 +41,7 @@ Once you have obtained your API keys, you need to add them to the project. Here'
     const accessKey = "your access key for Unsplash API"; // Replace with your actual access key
     ```
 
-2. **OpenWeatherMap API**: Sign up for an account on [OpenWeatherMap](https://openweathermap.org/api) and obtain an API key. Replace the placeholder text `"your OpenWeatherMap API key"` in the `js/weather.js` file with your actual API key.
+2. **OpenWeatherMap API**: Replace the placeholder text `"your OpenWeatherMap API key"` in the `js/weather.js` file with your actual API key.
 
     ```javascript
     // In js/weather.js
