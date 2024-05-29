@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/images/weather.png" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/searchInput.css" />
+		<link rel="stylesheet" href="css/weather.css" />
+		<script type="module" src="js/weather.js" defer></script>
+	</head>
+	<body>
+		<div id="weather-container">
+			<h1>Welcome to my simple weather app!</h1>
+			<div class="searchInput">
+				<div class="input-control">
+					<label for="city"></label>
+					<input type="text" id="city" placeholder="Enter city" name="city" />
+					<div class="error"></div>
+				</div>
+				<button id="searchButton">
+					<img src="images/search.png" width="47" height="55" />
+				</button>
+			</div>
+
+			<img id="weather-icon" alt="Weather Icon" />
+
+			<div id="temp-div"></div>
+
+			<div id="weather-info"></div>
+			<div class="details">
+				<div class="col">
+					<img src="images/humidity.png" width="79" height="66" />
+					<div>
+						<p id="humidity"></p>
+						<p>Humidity</p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="images/wind.png" width="79" height="78" />
+					<div>
+						<p id="wind"></p>
+						<p>Wind Speed</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="cityPicDiv">
+				<h1 id="cityLocation"></h1>
+				<img id="city-image" src="" alt="" />
+				<p id="imageDate"></p>
+			</div>
+
+			<div id="hourly-forecast"></div>
+		</div>
+	</body>
+</html>
