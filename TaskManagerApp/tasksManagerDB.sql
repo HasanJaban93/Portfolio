@@ -1,0 +1,20 @@
+SET NAMES utf8mb4;
+SET CHARSET utf8mb4;
+
+DROP DATABASE IF EXISTS taskmanager;
+
+CREATE DATABASE taskmanager CHARSET utf8mb4;
+USE taskmanager;
+
+CREATE TABLE tasks (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    description VARCHAR(255) NOT NULL,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    state ENUM('INCOMPLETED', 'COMPLETED') NOT NULL DEFAULT 'INCOMPLETED',
+    UNIQUE KEY unique_moment (date, time)
+);
+
+CREATE USER IF NOT EXISTS student IDENTIFIED BY 'student';
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON tasks TO student;
