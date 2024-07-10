@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book List</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="module" src="js/toggleSection.js" defer></script>
+		<script type="module" src="js/books/getBooksBy.js" defer></script>
+		<script type="module" src="js/books/getBookById.js" defer></script>
+		<script type="module" src="js/books/addNewBook.js" defer></script>
+		<script type="module" src="js/authors/getAuthorsBy.js" defer></script>
+		<script type="module" src="js/authors/getAuthorById.js" defer></script>
+		<script type="module" src="js/authors/createAuthor.js" defer></script>
+		<script type="module" src="js/members/getMembersBy.js" defer></script>
+		<script type="module" src="js/members/findMemberById.js" defer></script>
+		<script type="module" src="js/members/createMember.js" defer></script>
+		<script type="module" src="js/members/returnCopy.js" defer></script>
+		<script type="module" src="js/copies/findCopies.js" defer></script>
+		<script type="module" src="js/copies/findByIds.js" defer></script>
+		<script type="module" src="js/copies/findByBook.js" defer></script>
+	</head>
+	<body>
+		<h1>Welcome</h1>
+
+		<div id="mainButtons">
+			<button id="showAuthorsButton">Authors</button>
+			<button id="showBooksButton">Books</button>
+			<button id="showCopiesButton">Copies</button>
+			<button id="showMembersButton">Members</button>
+		</div>
+
+		<div id="authorsDiv" class="section">
+			<h2>Authors:</h2>
+			<button id="getAllAuthorsButton">Get All Authors</button>
+			<button id="findByFirstNameButton">Find Authors by First Name</button>
+			<button id="findByLastNameButton">Find Authors by Last Name</button>
+			<button id="findByYearOfBirthButton">
+				Find Authors by Year of Birth
+			</button>
+			<button id="findByGenderButton">Find Authors by Gender</button>
+			<button id="findByNationalityButton">Find Authors by Nationality</button>
+			<button id="findAuthorByIdButton">Find Author by ID</button>
+			<button id="addNewAuthorButton">Add a new author</button>
+		</div>
+
+		<div id="booksDiv" class="section">
+			<h2>Books:</h2>
+
+			<button id="getAllBooksBtn">Show All Books</button>
+			<button id="findByIdButton">Find By ID</button>
+			<button id="findByTitleButton">Find By Title</button>
+			<button id="findByGenreButton">Get by Genre</button>
+			<button id="findByPublicationYearButton">Get by Publication year</button>
+			<button id="addNewBookButton">Add a New Book</button>
+		</div>
+
+		<div id="copiesDiv" class="section">
+			<h2>Copies:</h2>
+
+			<button id="loadCopiesButton">Load Copies</button>
+			<button id="loadDigitalCopiesButton">Load Digital Copies</button>
+			<button id="loadPhysicalCopiesButton">Load Physical Copies</button>
+			<button id="findByFileHashButton">Find copy by file hash</button>
+			<button id="findByBarcodeButton">Find copy by barcode</button>
+			<button id="findCopyByBookIdButton">Find copy by Book ID</button>
+			<button id="findByAvailabilityAndBookIdButton">
+				Find copies by Availability and Book ID
+			</button>
+		</div>
+
+		<div id="membersDiv" class="section">
+			<h2>Members:</h2>
+			<button id="findAllMembersButton">Find All Members</button>
+			<button id="findMemberByFirstNameButton">
+				Find Member by First Name
+			</button>
+			<button id="findMemberByLastNameButton">Find Member by Last Name</button>
+			<button id="findMemberByGenderButton">Find Member by Gender</button>
+			<button id="findMemberByMunicipalityButton">
+				Find Member by Municipality
+			</button>
+			<button id="findMemberByIdButton">Find Member</button>
+			<button id="createMemberButton">Create Member</button>
+
+			<button id="returnCopyButton">Return Borrowed Copy</button>
+		</div>
+
+		<div id="inputDiv"></div>
+		<div id="result"></div>
+	</body>
+</html>

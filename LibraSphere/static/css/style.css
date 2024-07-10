@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.section {
+	display: none;
+}
+
+h1,
+h2 {
+	color: #333;
+	text-align: center;
+}
+
+/* Container Styles */
+div {
+	width: 80%;
+	margin: 20px auto;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 10px;
+}
+
+/* Hover style */
+#mainButtons button:hover,
+#mainButtons button.active {
+	background-color: #4caf50;
+	color: white;
+}
+
+/* Button Styles */
+button {
+	display: inline-block;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+/* Delete Button Styles */
+.deleteButtons {
+	background-color: #ff4c4c;
+}
+
+.deleteButtons:hover {
+	background-color: #d32f2f;
+}
+
+/* HR Style */
+hr {
+	border: 0;
+	height: 1px;
+	background: #ddd;
+	margin: 40px 0;
+}
+
+/* Input and Result Div Styles */
+#inputDiv,
+#result {
+	width: 80%;
+	margin: 20px auto;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+	padding: 8px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* Styling for the table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+	border: none;
+}
+
+th,
+td {
+	padding: 12px;
+	text-align: left;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tr {
+	border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+	border-bottom: none;
+}
+
+td {
+	padding: 15px;
+}
+
+#authorsTable tr,
+#booksTable tr,
+#physicalCopiesTable tr,
+#digitalCopiesTable tr,
+#membersTable tr,
+#borrowedDigitalCopiesTable tr,
+#borrowedPhysicalCopiesTable tr {
+	cursor: pointer; /* Make rows clickable */
+}
+
+#authorsTable tr:hover,
+#booksTable tr:hover,
+#physicalCopiesTable tr:hover,
+#digitalCopiesTable tr:hover,
+#membersTable tr:hover,
+#borrowedDigitalCopiesTable tr:hover,
+#borrowedPhysicalCopiesTable tr:hover {
+	background-color: #f1f1f1;
+}
+
+/* Styling for the awards list */
+#result h3 {
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	background-color: #f9f9f9;
+	margin: 5px 0;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	div {
+		width: 90%;
+	}
+
+	button {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+	table {
+		width: 100%;
+	}
+
+	th {
+		display: none; /* Hide headers for small screens */
+	}
+
+	td {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	tr {
+		display: block;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	td:before {
+		content: attr(data-label);
+		font-weight: bold;
+		display: block;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
